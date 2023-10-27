@@ -1,0 +1,142 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/jqx3l43cp2l51.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(to right, #333, #555);
+    /*background-color: #333;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    background: linear-gradient(to right, #555, #333);
+    /*background-color: #333;*/
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.show-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(to right, #555, #333);
+        padding: 20px;
+        position: absolute;
+        top: 4.6em;
+        right: 0;
+        z-index: 1;
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+}
+    
+/*
+body{
+    
+
+    margin-bottom: 30px;
+    height: fit-content;
+    width: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    background-attachment: fixed;
+    background-image: url(https://i.redd.it/jqx3l43cp2l51.png);
+    position: absolute;
+
+
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+section {
+    display: none;
+}
+*/

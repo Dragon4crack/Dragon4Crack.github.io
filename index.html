@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="ngrok-skip-browser-warning" content="**">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="js/jquery-min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".menu a").click(function (event) {
+                event.preventDefault();
+                var pageName = $(this).data("page");
+                $(".content").load(pageName);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/fondo.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="#" data-page="contacto.html">Contacto</a>
+            <a href="#" data-page="nosotros.html">Sobre nosotros</a>
+            <a href="#" data-page="tips.html">Tips</a>
+            <a href="#" data-page="componentes.html">Componentes</a>
+        </div>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Contenido aca -->
+    </div>
+</body>
+
+<script>
+    const menuIcon = document.querySelector(".menu-icon");
+    const menu = document.querySelector(".menu");
+
+    menuIcon.addEventListener("click", () => {
+        menu.classList.toggle("show-menu");
+    });
+</script>
+
+<!--
+</html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagweb</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+
+        <a href="contacto.html">CONTACTO</a>
+        <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
+        <a href="tips.html">TIPS</a>
+        <a href="componentes.html">COMPONENTES</a>
+    </nav>
+    <div class="fondo">
+
+
+    </div>
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+                sections.forEach(section => section.style.display = 'none');
+                sections[index].style.display = 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>
+-->
+
